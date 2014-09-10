@@ -13,3 +13,30 @@ This app was tested using Java 7 and Tomcat 7 on Ubuntu and OSX.  You will need 
 
 ## Development
 The Eclipse project contained in this repository is an Eclipse Dynamic Web project.  The [Eclipse IDE for Java EE Developers](https://www.eclipse.org/downloads/) bundles come with the necessary plugins to run the application in this repository in a development environment with a Tomcat installation.
+
+### Installing Tomcat
+#### Step 1) 
+
+Download the core Tomcat 7 distribution from [https://tomcat.apache.org/](https://tomcat.apache.org/).
+
+
+#### Step 2) 
+
+Unzip and move contents to the location where you would like to run Tomcat.
+
+`tar xvzf apache-tomcat-7.0.55.tar.gz`
+
+`sudo mv apache-tomcat-7.0.55 /opt/tomcat`
+
+#### Step 3) 
+Set the file permissions.  Tomcat files need to be readable and scripts need to be executable.
+
+`sudo chown -R <your_username_here> /opt/tomcat`
+
+`sudo chmod +x /opt/tomcat/bin/*.sh`
+
+#### Step 4) 
+
+Test the Tomcat installation.
+
+Run `/opt/tomcat/bin/startup.sh` to startup the Tomcat server.  Navigate to [http://localhost:8080](http://localhost:8080).  If Tomcat is properly installed you should see a Tomcat welcome page.  Once you know the installation is working you can shutdown the server with the `/opt/tomcat/bin/shutdown.sh` script.
