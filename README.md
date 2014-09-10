@@ -1,7 +1,7 @@
 LoginSideChannels
 =================
 
-The LoginSideChannels project is a Java Server Page (JSP) webapp vulnerable to various side channel attacks.
+The LoginSideChannels project is a Java Server Page (JSP) web app vulnerable to various side channel attacks.
 
 ## Vulnerabities
 The login mechanism has some short circuit logic that does not compute the hash of the given password if the user does not exist in the database.  By examining the response times of various users (reguardless of the provided password) an attacker can enumerate and discover the web applications users.  A demo of this attack using the Burp Suite penetration testing tool can be found in this repository in the [Demo](./Demo/) directory.
