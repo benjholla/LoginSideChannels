@@ -6,6 +6,8 @@ The LoginSideChannels project is a Java Server Page (JSP) web app vulnerable to 
 ## Vulnerabities
 The login mechanism has some short circuit logic that does not compute the hash of the given password if the user does not exist in the database.  By examining the response times of various users (regardless of the provided password) an attacker can enumerate and discover the web applications users.  A demo of this attack using the Burp Suite penetration-testing  tool can be found in this repository in the [Demo](./Demo/) directory.
 
+Usernames can also be enumerated using the different response messages produced by the create user page.
+
 ## Requirements
 This application requires a MySQL server.  The web application assumes the MySQL server is running on the localhost at port 3306.  The app connects to the server with the username "root" and the password "badpass".  These details can be changed in the Database.java class.
 
