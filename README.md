@@ -18,11 +18,11 @@ This app was tested using Java 7 and Tomcat 7 on Ubuntu and OSX.  You will need 
 ## Development
 The Eclipse project contained in this repository is an Eclipse Dynamic Web project.  The [Eclipse IDE for Java EE Developers](https://www.eclipse.org/downloads/) bundles come with the necessary plugins to run the application in this repository in a development environment with a Tomcat installation.
 
+## Deployment
 ### Installing Tomcat
 #### Step 1) 
 
 Download the core Tomcat 7 distribution from [https://tomcat.apache.org/](https://tomcat.apache.org/).
-
 
 #### Step 2) 
 
